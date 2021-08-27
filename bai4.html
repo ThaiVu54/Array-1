@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.-->
+<script>
+    let n = parseInt(prompt("nhap vao so luong phan tu"))
+    let a = [];
+    for(let i=0;i<n;i++){
+        let x = parseInt(prompt("nhap vao phan tu thu "+i))
+       a[i]= x ;
+    }
+    alert(a)
+    var newArr= a.reverse()
+    alert("mang dao nguoc: "+newArr)
+</script>
+</body>
+</html>
