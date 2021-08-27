@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử,
+nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không?
+Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".-->
+<script>
+    // n = parseInt(prompt("nhập vào số phần tử mảng"))
+    // let a = [];
+    // for (let i = 0; i < n; i++){
+    //     let x = parseFloat(prompt("nhap vao phần tử thứ "+i))
+    //     a[i]= x;
+    // }
+    // document.write("mảng vừa nhập là: "+a)
+    //
+    var arr = [1, 2, -1, 4, 6, -12, 23, 9, -35, 8];
+
+    let V = parseFloat(prompt("Enter 1 number:"));
+
+        if (arr.includes(V)) { // ham kiem tra 1 phan tu trong mang
+            alert("V is in the array")
+        } else alert("V is not in the array")
+
+
+</script>
+</body>
+</html>
