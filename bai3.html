@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+ In ra giá trị trung bình của các phần tử trong mảng.-->
+<script>
+    phanTuMang = parseInt(prompt("nhập số lượng phần tử mảng"))
+    let a = [];
+    let tong = null
+    for (let i = 0; i < phanTuMang; i++) {
+        let x = parseInt(prompt("nhập phần tử thứ " + i));
+        a.push(x) // a[i] = x
+        tong += a[i];
+    }
+    alert("mảng vừa nhập là: " + a);
+    max = a[0];
+    for (let j = 1; j < phanTuMang; j++) {
+        if (max < a[j]) {
+            max = a[j];
+        }
+    }
+    alert("max: " + max)
+
+    alert("gia tri trung binh cua cac phan tu trong mang: "+ tong/a.length)
+</script>
+</body>
+</html>
